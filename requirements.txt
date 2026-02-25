@@ -1,0 +1,6 @@
+These libraries are important to run the code
+
+
+qiskit 
+qiskit-aer
+matplotlib
