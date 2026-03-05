@@ -66,7 +66,7 @@ Because the code in this repository builds a "balanced" oracle, your output will
 ```text
 Measurement Results: {'111': 1000}
 Conclusion: The function is BALANCED.
-
+``` 
 
 
 ### 🔹 The Bernstein-Vazirani Algorithm
