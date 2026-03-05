@@ -68,3 +68,20 @@ Measurement Results: {'111': 1000}
 Conclusion: The function is BALANCED.
 
 
+
+### 🔹 The Bernstein-Vazirani Algorithm
+**File:** `bernstein_vazirani.py`
+
+The Bernstein-Vazirani algorithm demonstrates how a quantum computer can discover a hidden binary string (a secret code) in exactly **1 query**. 
+
+**The Classical Approach:** If the secret string is $n$ bits long, a classical computer must query the black box $n$ times to guess the string (testing one bit at a time).
+**The Quantum Approach:** By using quantum superposition and phase kickback, the Bernstein-Vazirani algorithm applies the oracle once and perfectly extracts the entire secret string $s$.
+
+* **Key Concepts:** Phase Kickback, Hidden Strings, Bitwise Dot Product.
+
+**Expected Output:**
+If the hidden secret string is set to `1011`, the simulation will find it with 100% certainty in one shot:
+```text
+Measurement Results:
+{'1011': 1000}
+The quantum computer found the secret string: 1011
