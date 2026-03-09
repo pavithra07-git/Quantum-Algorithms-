@@ -85,3 +85,22 @@ If the hidden secret string is set to `1011`, the simulation will find it with 1
 Measurement Results:
 {'1011': 1000}
 The quantum computer found the secret string: 1011
+```
+### 🔹 Grover's Search Algorithm
+**File:** `grovers_algorithm.py`
+
+Grover's algorithm provides a quadratic speedup for unstructured search problems. If you have an unsorted database of $N$ items, a classical computer must check $O(N)$ items on average to find a specific target. Grover's algorithm can find the target in just $O(\sqrt{N})$ steps!
+
+
+
+* **Key Concepts:**
+  * **The Oracle:** Identifies the target state and flips its phase (making its amplitude negative).
+  * **Amplitude Amplification (The Diffuser):** Inverts all probabilities around their average. This shrinks the probability of incorrect answers and drastically magnifies the probability of the correct answer.
+
+**Expected Output:**
+In this 2-qubit example, we search for the state `11` among 4 possible states (`00`, `01`, `10`, `11`). The algorithm amplifies the target state so it is measured 100% of the time:
+
+```text
+Measurement Results:
+{'11': 1000}
+The quantum computer found the target state: 11 ```
